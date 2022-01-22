@@ -9,4 +9,4 @@
 //Map throught the array and multiply each element by 2
 
 const maps = (arr) => arr.map((element) => element * 2);
-console.log(maps[(1, 2, 4)], [2, 4, 8]); //the expected outcome is the array on the right
+console.log(maps([1, 2, 4], [2, 4, 8])); //the expected outcome is the array on the right
