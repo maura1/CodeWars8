@@ -16,3 +16,6 @@ function check(a, x) {
 }
 console.log(check([1, 2, 3], 3));
 console.log(check([2, 3], 4));
+
+//alternative
+const check = (a, x) => a.includes(x);
