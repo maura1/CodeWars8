@@ -28,7 +28,7 @@ function finalGrade(exam, projects) {
     }
 }*/
 
-//cleaner alternative
+//cleaner alternative using the tenary operator
 
 const finalGrade = (exam, projects) => {
     return exam > 90 || projects > 10
