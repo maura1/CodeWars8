@@ -22,3 +22,13 @@ countBy(2,5) === [2,4,6,8,10]
 
 //Using the arrow function
 const countBy = (x, n) => [...Array(n)].map((_, idx) => idx * x);
+
+//Using the for loop
+function countBy(x, n) {
+    const result = [];
+
+    for (let i = 1; i < x * n; i++) {
+        if (i % x === 0) result.push(i);
+    }
+    return result;
+}
