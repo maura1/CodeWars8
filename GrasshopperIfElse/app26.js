@@ -10,12 +10,15 @@ function checkAlive(health) {
     } else {
         return false;
     }
+}
+//arrow function
+const health = health <= 0 ? false : true;
 
-    //arrow function
-    const health = health <= 0 ? false : true;
-
-    //
-    function checkAlive(health) {
-        return !(health <= 0); //this returns false because of the !
-    }
+//
+function checkAlive(health) {
+    return !(health <= 0); //this returns false because of the !
+}
+//
+function checkAlive(health) {
+    return health > 0; //if health is greater that 0 it returns true otherwise false
 }
