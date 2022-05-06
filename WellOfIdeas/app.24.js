@@ -28,3 +28,16 @@ const well1 = (arr) => {
         ? 'Publish!'
         : 'I smell a series!';
 };
+
+//Using the reduce()method
+function well(x) {
+    const count = x.reduce((i, v) => i + (v == 'good'), 0);
+    return count ? (count > 2 ? 'I smell a series!' : 'Publish!') : 'Fail!';
+}
+
+//Using forEach
+const well = (x) => {
+    let count = 0;
+    x.forEach((v) => v === 'good' && count++);
+    return count < 1 ? 'Fail!' : count < 2 ? 'Publish!' : 'I smell a Series!';
+};
