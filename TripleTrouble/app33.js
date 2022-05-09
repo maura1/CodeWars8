@@ -23,3 +23,11 @@ function tripleTrouble1(one, two, three) {
     }
     return str;
 }
+
+//Using an arrow function with the map() function
+
+const tripleTrouble2 = (one, two, three) =>
+    one
+        .split('')
+        .map((letter, index) => letter + two[index] + three[index])
+        .join('');
