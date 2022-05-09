@@ -24,7 +24,7 @@ function tripleTrouble1(one, two, three) {
     return str;
 }
 
-//Using an arrow function with the map() function
+//Using an arrow function with the map() functionRe
 
 const tripleTrouble2 = (one, two, three) =>
     one
